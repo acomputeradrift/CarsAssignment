@@ -10,17 +10,19 @@
 
 @implementation Car
 
+- (instancetype) initWithModel:(NSString*) model
+{
+    _model = model;
+    return self;
+}
+
 - (void) drive
 {
     NSString *drive = [NSString stringWithFormat:@"%@", _model];
     NSLog (@"%@", drive);
 }
 
-- (instancetype) initWithModel:(NSString*) model
-{
-    _model = model;
-    return self;
-}
+
 
 
 @end
